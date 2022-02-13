@@ -24,12 +24,12 @@ router.get("/:id", (req, res) => {
   // find one category by its `id` value
   Category.findOne({
     where: {
-      id: erq.params.id
+      id: req.params.id
     },
       // be sure to include its associated Products
       include: {
         model: Product,
-        attributes: ['category_id']
+        attributes: [Tag]
       }
   })
     .then(dbCategoryData => {
