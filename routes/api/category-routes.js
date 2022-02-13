@@ -8,6 +8,10 @@ router.get("/", (req, res) => {
   Category.findAll({
     attributes: { exclude: ["password"] },
     // be sure to include its associated Products
+    include: {
+      model: Product,
+      attributes: ['category_id']
+    }
   })
     .then((dbCategoryData) => res.json(dbCategoryData))
     .catch((err) => {
@@ -18,7 +22,24 @@ router.get("/", (req, res) => {
 
 router.get("/:id", (req, res) => {
   // find one category by its `id` value
-  // be sure to include its associated Products
+  Category.findOne({
+    where: {
+      id: erq.params.id
+    },
+      // be sure to include its associated Products
+      include: {
+        model: Product,
+        attributes: ['category_id']
+      }
+  })
+    .then(dbCategoryData => {
+      res.json(dbCategoryData)
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      })
+    })
+
 });
 
 router.post("/", (req, res) => {
