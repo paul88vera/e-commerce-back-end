@@ -32,7 +32,7 @@
   $ node seeds/index.js
   $ npm start
   ```
-  If successful, you can view, add, or delete items using an API test client such as Insomnia.
+  If successful, you can view, add, or delete items using an API test client such as [Insomnia](https://insomnia.rest/download).
 
 ----
   ## Questions
