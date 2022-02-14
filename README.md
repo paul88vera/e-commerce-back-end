@@ -13,7 +13,8 @@
   - [Questions](#questions)
 
   ## Installation
-  * Click `code` button and copy the `HTTPS` URL or download a `zip file`. * Once downloaded or cloned, open the file to use.
+  * Click `code` button and copy the `HTTPS` URL or download a `zip file`.
+  * Once downloaded or cloned, open the file to use.
 
   ## Usage
   The back-end databases is setup to use category, product, and tag tables in the database as a template that can be adjusted as needed.
@@ -27,10 +28,11 @@
   ## Tests
   In your cloned or downloaded pathway, type this into your terminal. 
   ```
+  $ npm i
   $ node seeds/index.js
   $ npm start
   ```
-  If successful, you can view, add, or delete items.
+  If successful, you can view, add, or delete items using an API test client such as Insomnia.
 
 ----
   ## Questions
