@@ -13,6 +13,7 @@
   - [Questions](#questions)
 
   ## Installation
+  * [View Tutorial Here](https://drive.google.com/file/d/1v-H1HI06tRhBcjsdp60QiaAw41MhEiv4/view)
   * Click `code` button and copy the `HTTPS` URL or download a `zip file`.
   * Once downloaded or cloned, open the file to use.
 
